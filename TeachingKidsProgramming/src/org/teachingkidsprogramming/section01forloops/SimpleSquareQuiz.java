@@ -7,19 +7,19 @@ public class SimpleSquareQuiz implements SquareQuiz
 {
   public void question1()
   {
-    //  Move the tortoise 110 pixels
+    //  Flytta sköldpaddan 110pixlar
   }
   public void question2()
   {
-    //  Turn the tortoise 1/5 of 360 degrees to the right
+    //  Sväng sköldpaddan 1/5 av 360 grader till höger
   }
   public void question3()
   {
-    //  Change the pen color the tortoise draws to yellow
+    //  Byt färg på så att sköldpaddan ritar med gult (yellow)
   }
   public void question4()
   {
-    //  Change the width of the line the tortoise draws to 5 pixels
+    //  Byt bredden(width) på linjen sköldpaddan ritar till 5 pixlar
   }
   public static void main(String[] args)
   {
