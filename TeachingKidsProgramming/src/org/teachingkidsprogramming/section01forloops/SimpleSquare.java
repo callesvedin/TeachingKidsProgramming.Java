@@ -4,12 +4,15 @@ public class SimpleSquare
 {
   public static void main(String[] args) throws Exception
   {
-    //  Show the tortoise --#1
-    //  Make the tortoise move as fast as possible --#6
-    //  Do the following 4 times --#5.1
-    //      Change the pen color of the line the tortoise draws to "blue" --#4
-    //      Move the tortoise 50 pixels --#2
-    //      Turn the tortoise to the right (90 degrees) --#3
-    //  Repeat --#5.2
+    // Visa sköldpaddan -- #1    
+    // Gör så att sköldpaddan rör sig så fort som möjligt --#6
+    // Gör följande 4 gånger --#5.1
+    //      Byt färg på linjen som sköldpaddan ritar till "blue" --#4
+    //      Flytta sköldpaddan 50 pixlar --#2
+    //      Sväng sköldpaddan 90 grader(degrees) åt höger --#3      
+    //  Repetera --#5.2
   }
+  /*
+   * När är du är klar, titta på video ___ på http://youtu.be/5bqUZEsJh_Q
+   */
 }
