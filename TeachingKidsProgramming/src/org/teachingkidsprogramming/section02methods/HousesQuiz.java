@@ -7,41 +7,41 @@ public class HousesQuiz extends HousesQuizAdapter
 {
   public void questions1Thru6()
   {
-    // Question 1 
-    //   small (recipe below) 
-    //   ------------- Recipe for small 
+    // Fråga 1 
+    //   small (recept nedanför) 
+    //   ------------- Recept för liten (small) 
     length = 7;
-    //   ------------- End of small recipe
+    //   ------------- Slut på small receptet
     //
-    //   Question2
+    //   Fråga 2
     //   medium (recipe below) 
-    //   ------------- Recipe for medium 
-    //      set the current length to 21
-    //   ------------- End of medium recipe
+    //   ------------- Recept för mellan (medium ) 
+    //      sätt nuvarande längd till 21
+    //   ------------- Slut på medium receptet
     //
-    //   Question3
+    //   Fråga 3
     //   large (recipe below) 
-    //   ------------- Recipe for large 
-    //      set the current length to 63
-    //   ------------- End of large recipe
+    //   ------------- Recept för stor (large) 
+    //      sätt nuvarande längd till 63
+    //   ------------- Slut på large receptet
     //
-    //   Question4
+    //   Fråga 4
     //   moveTheLength (recipe below) 
-    //   ------------- Recipe for moveTheLength 
-    //      move the Tortoise the current length
-    //   ------------- End of moveTheLength recipe
+    //   ------------- Recept för flyttaLängd(moveTheLength) 
+    //      Flytta sköldpaddan nuvarande längd
+    //   ------------- Slut på moveTheLength receptet
     //
-    //   Question5
+    //   Fråga 5
     //   turnTheCorner (recipe below) 
-    //   ------------- Recipe for turnTheCorner 
-    //      turn the Tortoise 1/3 of 360 degrees to the left
-    //   ------------- End of turnTheCorner recipe
+    //   ------------- Recept för vändRuntHörnet (turnTheCorner) 
+    //      Sväng sköldpaddan 1/3 av ett varv (360grader) till vänster          
+    //   ------------- Slut på turnTheCorner receptet
     //
-    //   Question6
+    //   Fråga 6
     //   drawASide (recipe below) 
-    //   ------------- Recipe for drawASide 
-    //      call moveTheLength and turnTheCorner
-    //   ------------- End of drawASide recipe
+    //   ------------- Recept för ritaEnSida (drawASide) 
+    //      Ropa på moveTheLength och turnTheCorner
+    //   ------------- Slut på drawASide receptet
   }
   public static void main(String[] args)
   {
