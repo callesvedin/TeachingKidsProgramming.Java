@@ -6,27 +6,28 @@ public class HiLowQuiz extends org.teachingkidsprogramming.recipes.quizzes.grade
 {
   public void question1()
   {
-    //        if the Y position of the tortoise is 115
+    //        Om sköldpaddans Y-position är 115    
     //
-    //         turn the tortoise to the right 63 degrees 
+    //          Vänd sköldpaddan 63 grader åt höger 
   }
   public void question2()
   {
-    //        if the X position of tortoise is less than Y position of tortoise
+    //        om sköldpaddans x-position är mindre än sköldpaddans Y-position     
     //
-    //         turn the tortoise 54 degrees to the left
+    //          Vänd sköldpaddan 54 grader åt vänster
     //
-    //        otherwise turn the tortoise 22 degrees to the right
+    //        annars sväng sköldpaddan 22 grader åt höger
   }
   public void question3()
   {
     //        display the message "elcomeway omehay!"
+    //        visa meddelandet "elcomeway omehay!"
   }
   public void question4()
   {
-    //        if the Y position of tortoise is greater than 50
+    //        Om sköldpaddans Y-position är större än 50
     //
-    //         turn the tortoise 177 degrees to the left
+    //         Sväng sköldpaddan 177 grader åt vänster
   }
   public static void main(String[] args)
   {
