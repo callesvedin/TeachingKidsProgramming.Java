@@ -1,92 +1,129 @@
 package org.teachingkidsprogramming.section03ifs;
 
+import org.teachingextensions.windows.MessageBox;
+
 public class ChooseYourOwnAdventure
 {
   public static void main(String[] args)
   {
-    //   Anropa startStory (recipe below) --#2.1
+    startStory();
+  }
+  private static void startStory()
+  {
+    MessageBox.showMessage("En morgon vaknade sköldpaddan upp i en dröm.");
     //
-    //   ------------- Recept för startStory --#2.2
-    //      Tala om för användaren "En morgon vaknade Sköldpaddan upp i en dröm" --#1
+    //      Anropa animera börja historian receptet (animateStartStory) --#38.1
     //
-    //      Anropa animateStartStory (recept nedan) --#38.1
-    //
-    //      ------------- Recept för animateStartStory --#38.2
+    //      ------------- Recept för att animera börja historien (animateStartStory) --#38.2
     //         Visa sköldpaddan --#37
-    //         Sett pennans färg till svart --#39.2
+    //         Nuvaranande färg är svart --#39.2
     //         Gör följande 25 gånger --#41.1
-    //              Sätt bakgrundsfärgen till nuvarande penfärg --#39.1
-    //              Gör penfärgen lite ljusare--#42
+    //              Byt bakgrund till nuvarande penfärg  --#39.1
+    //              Gör nuvarande penfärg ljusare (lighter) --#42
     //              Vänta i 100 millisekunder --#40  
-    //         Upprepa --#41.2
-    //      ------------- End of animateStartStory recipe --#38.3
+    //         Repetera --#41.2
+    //      ------------- Slut på animateStartStory recept --#38.3
     //
-    //      Ask the user "Do you want to 'wake up' or 'explore' the dream?" --#3
-    //      If they answer "wake up" --#6
-    //          wakeUp (recipe below) --#5.1
+    String svar = MessageBox.askForTextInput("Vill du 'vakna' eller 'utforska' drömmen?");
+    //      Om användaren svarar "vakna" --#6
+    if (svar.equalsIgnoreCase("vakna"))
+    {
+      //          Anropa vakna receptet (wakeUp) --#5.1
+      wakeUp();
+    }
+    //      Annars, om användaren svarar "utforska" --#9
+    else if (svar.equalsIgnoreCase("utforska"))
+    {
+      //          anropa närma dig klet receptet (approachOoze) --#8.1
+      approachOoze();
+      //
+    }
+    //      Annars, om svaret är något annat --#12
+    else
+    {
+      //            Anropa fel svar receptet (badAnswer) --#11.1
+      badAnswer();
+    }
     //
-    //          ------------- Recipe for wakeUp --#5.2
-    //              Tell the user "You Wake up and have a boring day.  The End." --#4
-    //          ------------- End of wakeUp recipe --#5.3
-    //      Otherwise, if they answer "explore" --#9
-    //          approachOoze (recipe below) --#8.1
+  }
+  private static void badAnswer()
+  {
+    //      ------------- Recept för fel svar (badAnswer) --#11.2
+    //         Säg till användaren "Du vet inte hur man läser instruktioner. Du kan inte spela det här spelet.  SLUT!." --#10
+    MessageBox.showMessage("Du vet inte hur man läser instruktioner. Du kan inte spela det här spelet.  SLUT!.");
+    //      ------------- Slut på fel svar receptet --#11.3    
+  }
+  private static void approachOoze()
+  {
+    //      ------------- Recept för närma dig ooz (approachOoze) --#8.2
+    //         Säg till användaren "Du närmar dig en hink med lysande, grönt klet. Orolig för att du ska hamna i knipa så tar du upp hinken." --#7
+    MessageBox
+        .showMessage("Du närmar dig en hink med lysande, grönt klet. Orolig för att du ska hamna i knipa så tar du upp hinken.");
+    //         Fråga användaren "Vill du hälla kleten i 'trädgården' eller i 'toaletten'?" --#13
+    String svar = MessageBox.askForTextInput("Vill du hälla kleten i 'trädgården' eller i 'toaletten'?");
+    //         Om dom svarar "toaletten"  --#16
+    if (svar.equalsIgnoreCase("toaletten"))
+    {
+      //              anropa häll i toaletten receptet (pourIntoToilet) --#15.1
+      pourIntoToilet();
+    }
     //
-    //      ------------- Recipe for approachOoze --#8.2
-    //         Tell the user "You approach a glowing, green bucket of ooze, worried that you will get in trouble, you pick up the bucket." --#7
-    //         Ask the user "Do you want to pour the ooze into the 'backyard' or 'toilet'?" --#13
-    //         If they answer "toilet" --#16
-    //              pourIntoToilet (recipe below) --#15.1
     //
-    //         ------------- Recipe for pourIntoToilet --#15.2
-    //            Tell the user "As you pour the ooze into the toilet it backs up, gurgles and explodes covering you in radio-active waste." --#14
-    //            Ask the user "Do you want to train to be a NINJA?  'Yes' or 'HECK YES'?" --#29
-    //            If they answer "yes" --#32
-    //                  ninjaTortoise (recipe below) --#31.1
+    //         Annars, om svaret är "trädgården" --#19
+    //         Anroopa receptet för häll i trädgården (pourIntoBackyard) --#18.1
     //
-    //            ------------- Recipe for ninjaTortoise --#31.2
-    //               Tell the user "Awesome Dude!  You live out the rest of your life fighting crimes and eating pizza!" --#30
-    //            ------------- End of ninjaTortoise recipe --#31.3
+    //         ------------- Recept för  häll i trändgården (pourIntoBackyard) --#18.2
+    //            Tala om för användaren "När du går till trädgården blir du fångad i ett nät och en jätte tar dig till en kokande kastrull med vatten." --#17
+    MessageBox
+        .showMessage("När du går till trädgården blir du fångad i ett nät och en jätte tar dig till en kokande kastrull med vatten.");
+    //            Fråga användaren "Medan jätten förbereder dig till som soppa... Vad gör du? 'Skrik' eller 'Svimma'?" --#21
+    //            Om svaret är "svimma"" --#24
     //
-    //            Otherwise, if they answer "heck yes" --#34
-    //            ninjaTortoise (recipe below) --#33
+    //                  Anropa receptet sköldpaddssoppa (tortoiseSoup) --#23.1
     //
-    //            Otherwise, if they answer anything else --#36
-    //            badAnswer (recipe below) --#35
+    //            ------------- Recept för sköldpaddssoppa (tortoiseSoup) --#23.2
+    //               Säg till användaren "Du blev en utmärkt soppa! Smaskens!  SLUT." --#22
+    //            ------------- Slut på sköldpaddssoppa (tortoiseSoup) --#23.3
     //
-    //         ------------- End of pourIntoToilet recipe --#15.3
+    //            Annars, om svaret är "skrik" --#26
+    //                  Anropa receptet starta historien (startStory) --#25.1
     //
-    //         Otherwise, if they answer "backyard" --#19
-    //         pourIntoBackyard (recipe below) --#18.1
+    //            Annars, om svaret är något annat --#28
+    //                  anropa receptet för fel svar (badAnswer)--#27
     //
-    //         ------------- Recipe for pourIntoBackyard --#18.2
-    //            Tell the user "As you walk into the backyard a net scoops you up and a giant takes you to a boiling pot of water." --#17
-    //            Ask the user "As the man starts to prepare you as soup, do you...  'Scream' or 'Faint'?" --#21
-    //            If they answer "faint" --#24
+    //         ------------- Slut på häll i trädgården receptet (pourIntoBackyard) --#18.3
+    //         Annars, om svaret är något annat--#20
+    //            anropa fel svar receptet (badAnswer) --#19
+    //      ------------- Slut på närma dig ? receptet (approachOoze) --#8.3
     //
-    //                  tortoiseSoup (recipe below) --#23.1
+  }
+  private static void pourIntoToilet()
+  {
+    //         ------------- Recept för häll i toaletten (pourIntoToilet) --#15.2
+    //            Säg till användaren "När du häller kleten i toaletten försvinner det undan gutglar och exploderar över dig med radioaktivt avfall." --#14
+    MessageBox
+        .showMessage("När du häller kleten i toaletten försvinner det undan gurglar och exploderar över dig med radioaktivt avfall.");
+    //            Fråga användaren "Vill du träna för att bli en NINJA? 'Ja' eller 'Givet'?" --#29
+    //            Om svaret är "yes" --#32
+    //                  Anropa receptet ninjasköldpadda (ninjaTortoise) --#31.1
     //
-    //            ------------- Recipe for tortoiseSoup --#23.2
-    //               Tell the user "You made a delicious soup!  Yum!  The End." --#22
-    //            ------------- End of tortoiseSoup recipe --#23.3
+    //            ------------- Recept för ninjasköldpadda (ninjaTortoise) --#31.2
+    //               Säg till användaren "Häftigt!  Du lever resten av ditt liv genom att bekämpa brott och äta pizza!" --#30
+    //            ------------- Slut på ninjasköldpadda-receptet (ninjaTortoise) --#31.3
     //
-    //            Otherwise, if they answer "scream" --#26
-    //                  startStory (recipe below) --#25.1
+    //            Annars, om svaret är "Givet" --#34
+    //            Anropa ninjasköldpadda receptet (ninjaTortoise) --#33
     //
-    //            Otherwise, if they answer anything else --#28
-    //                  badAnswer (recipe below) --#27
+    //            Annars, om svaret är något annat --#36
+    //            Anropa fel svar receptet (badAnswer) --#35
     //
-    //         ------------- End of pourIntoBackyard recipe --#18.3
-    //         Otherwise, if they answer anything else --#20
-    //            badAnswer (recipe below) --#19
-    //      ------------- End of approachOoze recipe --#8.3
-    //
-    //      Otherwise, if they answer anything else --#12
-    //            badAnswer (recipe below) --#11.1
-    //
-    //      ------------- Recipe for badAnswer --#11.2
-    //         Tell the user "You don't know how to read directions.  You can't play this game.  The End." --#10
-    //      ------------- End of badAnswer recipe --#11.3
-    //
-    //   ------------- End of startStory recipe --#2.3
+    //         ------------- Slut på häll i toaletten receptet (pourIntoToilet) --#15.3
+  }
+  private static void wakeUp()
+  {
+    //          ------------- Recept för vakna (wakeUp) --#5.2
+    //              Säg till användaren "Du vaknar och har en tråkig dag. Slut på sagan." --#4
+    MessageBox.showMessage("Du vaknar och har en tråkig dag. SLUT!");
+    //          ------------- Slut på vakna (wakeUp) --#5.3
   }
 }
