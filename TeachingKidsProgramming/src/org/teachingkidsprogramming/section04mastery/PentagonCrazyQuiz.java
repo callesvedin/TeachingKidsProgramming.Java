@@ -7,25 +7,25 @@ public class PentagonCrazyQuiz extends PentagonQuizAdapter
 {
   public void question1()
   {
-    // Question 1 
-    //   thread (recipe below) 
-    //   ------------- Recipe for thread
-    //       that moves the tortoise 6 pixels
-    //   ------------- End of thread recipe
+    // Fråga 1 
+    //   Anropa trä tråd (thread) 
+    //   ------------- Recept för trä tråd
+    //       Flytta sköldpaddan 6 pixlar
+    //   ------------- Slut på receptet för trä tråd (thread)  
   }
   public void question2()
   {
-    //        Do the following 76 times
-    //           call stitch
-    //        Repeat
+    //        Gör följande 76 gånger
+    //           anropa sy (stitch)
+    //        Repetera
   }
   public void question3()
   {
-    //        Add lime to the color wheel
+    //        Lägg till färgen lime till färghjulet
   }
   public void question4()
   {
-    //        Add red to the color wheel
+    //        Lägg till färgen röd till färghjulet
   }
   public static void main(String[] args)
   {

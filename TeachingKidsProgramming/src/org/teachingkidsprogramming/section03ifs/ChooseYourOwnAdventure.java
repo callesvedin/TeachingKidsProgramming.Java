@@ -4,21 +4,21 @@ public class ChooseYourOwnAdventure
 {
   public static void main(String[] args)
   {
-    //   startStory (recipe below) --#2.1
+    //   Anropa startStory (recipe below) --#2.1
     //
-    //   ------------- Recipe for startStory --#2.2
-    //      Tell the user "One morning the Tortoise woke up in a dream." --#1
+    //   ------------- Recept för startStory --#2.2
+    //      Tala om för användaren "En morgon vaknade Sköldpaddan upp i en dröm" --#1
     //
-    //      animateStartStory (recipe below) --#38.1
+    //      Anropa animateStartStory (recept nedan) --#38.1
     //
-    //      ------------- Recipe for animateStartStory --#38.2
-    //         Show the Tortoise --#37
-    //         The current pen color is black --#39.2
-    //         Do the following 25 times --#41.1
-    //              Turn the background to the current pen color --#39.1
-    //              Lighten the current pen color --#42
-    //              Wait for 100 milliseconds --#40  
-    //         Repeat --#41.2
+    //      ------------- Recept för animateStartStory --#38.2
+    //         Visa sköldpaddan --#37
+    //         Sett pennans färg till svart --#39.2
+    //         Gör följande 25 gånger --#41.1
+    //              Sätt bakgrundsfärgen till nuvarande penfärg --#39.1
+    //              Gör penfärgen lite ljusare--#42
+    //              Vänta i 100 millisekunder --#40  
+    //         Upprepa --#41.2
     //      ------------- End of animateStartStory recipe --#38.3
     //
     //      Ask the user "Do you want to 'wake up' or 'explore' the dream?" --#3

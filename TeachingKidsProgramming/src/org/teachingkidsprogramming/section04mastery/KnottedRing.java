@@ -4,19 +4,19 @@ public class KnottedRing
 {
   public static void main(String[] args)
   {
-    //      Make the tortoise move as fast as possible --#4
-    //      createColorPalette (recipe below) --#7.1
+    //      Gör så att sköldpaddan går så fort som möjligt --#4
+    //      Anropa skap färgpalett receptet (createColorPalette) --#7.1
     //
-    //      ------------- Recipe for createColorPalette (HINT: Use PenColors)--#7.2
-    //      Add hot pink to the color wheel --#6
-    //      Add red to the color wheel --#13
-    //      Add fuchsia to the color wheel --#14
-    //      Add orange red to the color wheel --#15
-    //      Add deep pink to the color wheel --#16
-    //      Add medium violet red to the color wheel --#17
-    //      Add crimson to the color wheel --#18
-    //      Add tomato to the color wheel --#19
-    //      ------------- End of createColorPalette recipe --#7.3
+    //      ------------- Recept för skapa färgpalett (createColorPalette) (Ledtråd: Använd PenColors)--#7.2
+    //      Lägg till het rosa till färghjulet --#6
+    //      Lägg till röd till färghjulet --#13
+    //      Lägg till fuchsia till färghjulet--#14
+    //      Lägg till orange red till färghjulet --#15
+    //      Lägg till djup rosa (deep pink) till färghjulet--#16
+    //      Lägg till mellan viloet till färghjulet --#17
+    //      Lägg till crimson to till färghjulet --#18
+    //      Lägg till tomat (tomato) till färghjulet --#19
+    //      ------------- Slut på skapa färgpalett (createColorPalette) --#7.3
     //          Do the following 30 times --#11.1
     //              Change the pen color of the line the tortoise draws to a random color from the color wheel --#5
     //              drawOctagonWithOverlap (recipe below) --#9
